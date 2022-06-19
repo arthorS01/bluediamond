@@ -1,0 +1,138 @@
+
+@import url("https://fonts.google.com/specimen/Lexend+Deca");
+@import url("https://fonts.google.com/specimen/Big+Shoulders+Display");
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0px;
+    position: relative;
+    background-color: hsl(0,0%,95%);
+    
+}
+
+header{
+    background-color: white;
+    position: fixed;
+    top:0%;
+    width:100%;
+    height: 8vh;
+    box-shadow: 0px -2px 5px 1px black;
+}
+
+nav ul{
+
+    padding:0px;
+}
+nav ul li{
+    display: inline;
+    padding: 5px 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-family: calibri;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    
+}
+
+footer{
+    height: 5vh;
+    background-color: lightgrey;
+}
+#card_container{
+   
+    height: 60%;
+    width:55%;
+}
+.card{
+    padding:10px 15px 10px 30px;
+}
+.brand_area{
+    padding-top: 20px;
+}
+
+button{
+
+    padding:10px 15px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-style: none;
+    width:70%;
+    margin-bottom:10%;
+    cursor: pointer;
+    transition: all 0.5s;
+    background-color: hsl(0,0%,95%);
+}
+h3{
+    color:hsl(0,0%,95%);
+}
+
+p{
+    color:hsla(0,0%,100%,0.75);
+    margin-bottom: 40%;
+    font-family: "Lexend Deca";
+    font-weight: 400;
+}
+img{
+    background-color: transparent;
+    color: transparent;
+}
+#sedan{
+    background-color: hsl(31, 77%, 52%);
+}
+#suv{
+    background-color: hsl(184, 100%, 22%);
+}
+#luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+#suv button{
+
+color: hsl(184, 100%, 22%);
+}
+#luxury button{
+
+color: hsl(179, 100%, 13%);
+}
+.brand_area{
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+}
+
+
+button:hover{
+    border:1px solid white;
+    background-color: transparent;
+    color: white !important;
+}
+
+@media screen and (max-width: 375px) {
+ #card_container{
+     flex-direction: column;
+     width:100%;
+     padding:0px;
+ }
+ main{
+    overflow-y: scroll;
+   
+ }
+}
+
+@media screen and (max-width: 1400px) {
+  
+    #card_container{
+        display: flex;
+        padding:0%;
+    }
+}
