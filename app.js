@@ -68,7 +68,7 @@ function addpixelEvent(){
     let pixels = document.querySelectorAll(".pixel");
 
     pixels.forEach(pixel => {
-       pixel.addEventListener("mouseover",function(){
+       pixel.addEventListener("touchmove",function(){
         
         let current_count = Number(pixel.getAttribute("data-color-transition-count"));
 
