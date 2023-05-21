@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+}
+h2{
+    font-size: 100%;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:100vh;
+}
+body{
+    margin:0;
+    padding:0;
+}
+.pixel{
+  background-color: white;
+  border:1px solid lightgray;
+  cursor:pointer;
+  transition: all 0.5s;
+}
+#controlls{
+  
+    display: flex;
+    justify-content: space-between;
+    width:30vh;
+    padding:5px;
+}
+#controlls button{
+    border-style: none;
+    padding:5px 10px;
+    border-radius:5px;
+}
+#sketch-form{
+    position:absolute;
+    visibility: hidden;
+    opacity: 0.1;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0.5px black;
+    top:0;
+    left:25%;
+    transform:translate(0,-100%) scale(0.1);
+    width:50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s;
+    margin:0%;
+}
+#close-form-btn{
+    position: absolute;
+    top:1%;
+    right:1%;
+    background-color: transparent;
+    border-style: none;
+}
+#sketch-form form{
+    width:80%;
+    padding:5px;
+}
+#sketch-form form input{
+    display: block;
+    padding:5px;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    width:100%;
+    outline: none;
+}
+#sketch-pad{
+    height:80vh;
+    width:80vw;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow:0px 0px 5px 1px grey;
+}
+
+.show-form{
+    visibility: visible !important;
+    transform:translate(0,0) scale(1) !important;
+    top:25% !important;
+    opacity:1  !important;
+}
+button,input[type="button"]{
+    cursor:pointer;
+}
+
+#clear-sketch-btn{
+    background-color: #E76161;
+}
+
+#create-sketch-btn{
+    background-color: #B0DAFF;
+}

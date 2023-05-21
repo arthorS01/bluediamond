@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Etch a sketch</title>
+</head>
+<body>
+    <div id="sketch-form">
+        <h2>Create sketch area</h2><button id="close-form-btn">x</button>
+        <form>
+            <input type="number" placeholder="Enter horizonal dimension" id="horizontal_dim">
+            <input type="number" placeholder="Enter vertical dimension"  id="vertical_dim">
+            <input type="submit" value="Create" id="create-sketch-pad-btn">
+        </form>
+    </div>
+
+    <main>
+        <div id="controlls">
+            <button id="create-sketch-btn">New</button>
+            <button id="clear-sketch-btn">clear</button>
+        </div>
+        <div id="sketch-pad"></div>
+    </main>
+    <footer></footer>
+</body>
+</html>
+
+<script src="app.js"></script>
