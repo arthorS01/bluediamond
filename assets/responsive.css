@@ -1,0 +1,67 @@
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    h1{
+      margin-top:0%;
+    }
+    #school-logo{
+      display: none;
+    }
+    #header nav ul{
+      float:none;
+      min-width:100% ;
+      justify-content: space-between;
+      padding:2%;
+  
+    }
+    #curriculum-btn{
+      display:none !important;
+    }
+
+    #header nav li{
+      min-width:auto;
+    
+    }
+    #anchor #image-area{
+      display: none;
+    }
+   #anchor {
+    font-size:100%;
+   }
+
+   #about-us{
+    display: block;
+    position: relative;
+   }
+
+   #join-us #review-area{
+      display: block;
+      overflow-x: auto;
+   }
+   .review-card{
+    height: 100%;
+   }
+
+   #contact-us{
+    padding:0%;
+    padding-top:2%;
+    margin:0%;
+    min-width:100vw;
+   }
+   #form{
+    display: block;
+    box-shadow: none;
+    max-width:100%;
+   }
+
+   textarea{
+    width: 100%;
+   }
+   #illustration-image{
+    display: none;
+   }
+  }
+
+
+
+
+  
