@@ -1,0 +1,245 @@
+:root{
+    --primary-color:rgb(39, 39, 232);
+    --button:orange
+}
+*{
+    box-sizing: border-box;
+}
+h2{
+    font-family: calibri;
+    margin-top: 0%;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0%;
+}
+
+header{
+    height:100vh ;
+    background-image: linear-gradient(150deg,white,white,var(--primary-color));
+}
+
+#header{
+    display: flex;  
+}
+
+#header nav{
+    flex:1;
+    font-family: calibri;
+}
+nav a{
+    text-decoration: none;
+    color:black;
+}
+
+nav button{
+    border-style: none;
+    padding:5px 8px;
+    background-color: transparent;
+    color:var(--primary-color);
+    border:1px solid var(--primary-color);
+}
+
+#header nav ul{
+    width:80%;
+    float: right;
+    display: flex;
+    justify-content: space-evenly
+}
+
+#header nav li{
+
+    display: inline-block;
+    min-width: 20%;
+}
+
+#school-logo{
+
+    display: block;
+    min-width: 10%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#anchor{
+    padding:4% 5%;
+    display: flex;
+    width:90%;
+    margin: auto;
+    font-size:120%;
+}
+#anchor-text{
+    font-family: calibri;
+    flex:2;
+}
+#anchor #image-area{
+    flex:1;
+    background-image:url("1561.jpg");
+    background-position: center;
+    background-size: cover;
+    border:2px solid white;
+    border-radius: 50%;
+}
+
+#anchor-text p{
+    margin-bottom:8%;
+}
+#anchor-text h1{
+    font-size: 250%;
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+#anchor-text h2{
+    color:var(--primary-color)
+}
+
+.btn{
+    padding:10px 20px;
+    border-style:none;
+    font-weight: bold;
+    font-family: calibri;
+    font-size: large;
+    background-color: var(--button);
+}
+#about-us{
+    background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    padding:3%;
+    gap:3%;
+}
+#mission-statement{
+    display: flex;
+    align-items: center;
+    font-size:large;
+}
+#about-us-image,#mission-statement{
+    flex:1;
+}
+#about-us-image{
+    background-image: url("2148093514.jpg");
+    background-position: center;
+    background-size: cover;
+    
+   
+}
+#join-us{
+    height:100vh ;
+    background-color: var(--primary-color);
+    color:white;
+    padding-top:3%;
+}
+
+#join-us h2{
+    margin-bottom:0;
+}
+#review-area{
+    height:70vh;
+    max-width: 80vw;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    color:black;
+}
+
+.review-card{
+    background-color: white;
+    height:70%;
+    flex:1;
+    padding:5%;
+    position: relative;
+}
+.review-card p::before{
+    content: "''";
+    display: block;
+    font-size:40px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top:0%;
+}
+.review-card:nth-of-type(2){
+    height: 80%;
+    box-shadow: 0px 0px 3px 2px gray;
+    z-index: 2;
+}
+
+
+.author {
+    display: flex;
+    gap:10px;
+    position: absolute;
+    bottom:2%;
+    
+}
+.author small{
+    display:block;
+}
+.author-img img{
+    border-radius:50%;
+}
+
+#contact-us{
+    margin:auto;
+    height:90vh;
+    display: flex;
+    padding:3%;
+    width:70vw;
+}
+#contact-us #form, #contact-us #illustration-image{
+    flex:1;
+}
+
+#form{
+    box-shadow: 0px 0px 5px 2px gray;
+    padding:3%;
+}
+label{
+    display: block;
+}
+.form-field{
+    margin-bottom:3%;
+}
+input[type="text"]{
+    border-style:none;
+    border-bottom:2px solid var(--primary-color);
+    min-width:100%;
+    padding:3%;
+}
+input[type="submit"]{
+    border-style: none;
+    padding:5px 8px;
+    background-color: transparent;
+    color:var(--primary-color);
+    border:1px solid var(--primary-color);
+}
+#illustration-image{
+    background-image: url("9319839_4141230.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+html::-webkit-scrollbar{
+    width:10px; 
+}
+html::-webkit-scrollbar-track{
+    background:rgb(121, 121, 216); 
+}
+
+html::-webkit-scrollbar-thumb:hover{
+    background:var(--primary-color); 
+}
+
+footer{
+   background-color: darkblue;
+   color:white;
+}
+#active{
+    color:var(--primary-color);
+}
+
+.row{
+    text-align: center;
+    margin:0.5%; 
+}
